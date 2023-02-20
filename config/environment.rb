@@ -1,6 +1,9 @@
-require 'bundler'
+#require the bundler gem in the application. The bundler manages gem dependencies for a projects
+'require bundler'
 Bundler.require
 
-require_relative '../lib/song'
+#loads the song.rb file
+require_relative '../lib/song.rb'
 
-DB = { conn: SQLite3::Database.new("db/music.db") }
+#creates a constant DB which is a signed a hash with a single key-value pair and initialized with the file path 'db/music.db'
+DB = { conn: SQLite3::Database.new('db/music.db') }
