@@ -1,5 +1,5 @@
 #require the bundler gem in the application. The bundler manages gem dependencies for a projects
-'require bundler'
+require 'bundler'
 Bundler.require
 
 #loads the song.rb file
